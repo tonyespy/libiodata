@@ -1,2 +1,8 @@
+This is a fork of libiodata originally source from Sailfish OS,
+which in turn sourced it from MeeGo.  Here's the respository
+it was forked from:
+
+https://github.com/nemomobile/libiodata
+
 libiodata --- a library for reading and writing simple structured data
 
