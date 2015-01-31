@@ -1,2 +1,2 @@
-usr/share/iodata-tests
-usr/bin/iodata-test
+debian/tmp/usr/share/iodata-tests
+debian/tmp/usr/bin/iodata-test

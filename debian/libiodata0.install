@@ -1,1 +1,1 @@
-usr/lib/libiodata.so.*
+debian/tmp/usr/lib/*/iodata/*.so*

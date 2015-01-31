@@ -1,3 +1,10 @@
+iodata (0.19~awe1) vivid; urgency=low
+
+  [ Tony Espy ]
+  * re-debianized for Ubuntu; match rpm version
+
+ -- Tony Espy <espy@canonical.com>  Tue, 27 Jan 2015 13:45:51 -0400
+
 iodata (0.18) unstable; urgency=low
 
   [ Ilya Dogolazky ]

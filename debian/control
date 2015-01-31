@@ -1,39 +1,28 @@
 Source: iodata
 Section: misc
 Priority: optional
-Maintainer: Victor Portnov <victor.portnov@teleca.com>
-Build-Depends: debhelper (>= 4.1.0),
- libqmlog-dev,
- libqt4-dev (>= 4.5)
-Standards-Version: 3.7.2
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+XSBC-Original-Maintainer: Victor Portnov <victor.portnov@teleca.com>
+Build-Depends: debhelper (>= 9),
+ qtbase5-dev (>= 5.2.1)
+Standards-Version: 3.9.5
 
 Package: libiodata0
 Architecture: any
-Depends: ${shlibs:Depends}
+Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: library for input/ouput data
  This package provides a library for writing and reading structured data
 
-Package: libiodata0-dbg
-Architecture: any
-Depends: libiodata0 (= ${binary:Version})
-Description: debug symbols for libiodata0
- This package contains debug information for libiodata0
-
 Package: libiodata-dev
 Architecture: any
-Depends: libiodata0 (= ${binary:Version}), libqt4-dev (>= 4.5)
+Section: libdevel
+Depends: libiodata0 (= ${binary:Version}), qtbase5-dev (>= 5.2.1),
+ ${misc:Depends}, ${shlibs:Depends}
 Description: development package for libiodata
  Provides header files for iodata library
 
 Package: iodata-tests
 Architecture: any
-Depends: ${shlibs:Depends}, ci-testing
-XB-Maemo-CI-Packages: libiodata0
-XB-Maemo-CI-Stage: fast, staging, acceptance, validation
-Section: tests
+Depends: ${shlibs:Depends}, ${misc:Depends}, ci-testing
 Description: testcases for iodata library
-
-Package: iodata-tests-dbg
-Architecture: any
-Depends: iodata-tests (= ${binary:Version})
-Description: debug symbols for testcases
+ Provides tests for iodata library

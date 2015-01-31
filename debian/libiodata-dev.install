@@ -1,6 +1,5 @@
-usr/include/iodata
-usr/lib/libiodata.so
+debian/tmp/usr/include/*/qt5/iodata/*
 
-usr/share/qt4/mkspecs/features/iodata.prf
+debian/tmp/usr/lib/*/qt5/mkspecs/features/iodata.prf
 
-usr/bin/iodata-type-to-c++
+debian/tmp/usr/bin/iodata-type-to-c++
