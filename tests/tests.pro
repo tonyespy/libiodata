@@ -2,8 +2,7 @@ VERSION = $$(IODATA_VERSION)
 TEMPLATE = app
 QT -= gui
 
-equals(QT_MAJOR_VERSION, 4): PACKAGENAME = iodata
-equals(QT_MAJOR_VERSION, 5): PACKAGENAME = iodata-qt5
+PACKAGENAME = iodata
 
 TARGET = $${PACKAGENAME}-test
 
