@@ -4,5 +4,10 @@
 # Uncomment this to turn on verbose mode.
 #export DH_VERBOSE=1
 
+export QT_SELECT=qt5
+
 %:
 	dh  $@
+
+override_dh_shlibdeps:
+	dh_shlibdeps -l debian/libiodata0/usr/lib/x86_64-linux-gnu/iodata

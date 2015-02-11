@@ -4,11 +4,17 @@ Priority: optional
 Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
 XSBC-Original-Maintainer: Victor Portnov <victor.portnov@teleca.com>
 Build-Depends: debhelper (>= 9),
+ bison,
+ flex,
+ pkg-config,
+ qt5-qmake,
  qtbase5-dev (>= 5.2.1)
 Standards-Version: 3.9.5
 
 Package: libiodata0
 Architecture: any
+Pre-Depends: ${misc:Pre-Depends}
+Multi-Arch: same
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: library for input/ouput data
  This package provides a library for writing and reading structured data
@@ -20,9 +26,3 @@ Depends: libiodata0 (= ${binary:Version}), qtbase5-dev (>= 5.2.1),
  ${misc:Depends}, ${shlibs:Depends}
 Description: development package for libiodata
  Provides header files for iodata library
-
-Package: iodata-tests
-Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}, ci-testing
-Description: testcases for iodata library
- Provides tests for iodata library

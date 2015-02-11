@@ -1,5 +1,4 @@
-debian/tmp/usr/include/*/qt5/iodata/*
-
-debian/tmp/usr/lib/*/qt5/mkspecs/features/iodata.prf
-
-debian/tmp/usr/bin/iodata-type-to-c++
+/usr/include/*/qt5/iodata/*
+/usr/lib/*/qt5/mkspecs/features/iodata.prf
+/usr/lib/*/iodata/pkgconfig
+/usr/bin/iodata-type-to-c++
