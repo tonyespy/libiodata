@@ -10,4 +10,4 @@ export QT_SELECT=qt5
 	dh  $@
 
 override_dh_shlibdeps:
-	dh_shlibdeps -l debian/libiodata0/usr/lib/x86_64-linux-gnu/iodata
+	dh_shlibdeps -l$(CURDIR)/debian/libiodata0/usr/lib/$(DEB_HOST_MULTIARCH)/iodata/ -- -v

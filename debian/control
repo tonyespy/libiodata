@@ -21,6 +21,8 @@ Description: library for input/ouput data
 
 Package: libiodata-dev
 Architecture: any
+Pre-Depends: ${misc:Pre-Depends}
+Multi-Arch: same
 Section: libdevel
 Depends: libiodata0 (= ${binary:Version}), qtbase5-dev (>= 5.2.1),
  ${misc:Depends}, ${shlibs:Depends}
