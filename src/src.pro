@@ -7,7 +7,7 @@ HEADERS = iodata.h validator.h storage.h misc.h log.h
 SOURCES = iodata.cpp validator.cpp storage.cpp misc.cpp
 
 TARGET = iodata
-target.path = $$[QT_INSTALL_LIBS]/iodata
+target.path = $$[QT_INSTALL_LIBS]
 
 pkgconfig.path = $$[QT_INSTALL_LIBS]/pkgconfig
 pkgconfig.files = iodata.pc
